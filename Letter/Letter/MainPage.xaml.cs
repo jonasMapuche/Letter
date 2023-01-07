@@ -18,14 +18,23 @@ namespace Letter
             InitializeComponent();
         }
 
-        int count = 0;
+        int count_exit = 0;
+        int lesson_number = 0;
         void Button_Clicked(object sender, System.EventArgs e)
         {
-            count++;
-            String abstrato = _grammar.GetSentenceSimple("lesson " + count);
-            ((Button)sender).Text = $"You clicked {count} lesson, sentence simple: " + abstrato;
+            String abstrato, lesson;
+            do {
+                lesson_number++;    
+                lesson = "lesson " + lesson_number;
+                abstrato = _grammar.GetSentenceSimple(lesson);
+            } while (abstrato == null);
+            count_exit++;
+            ((Button)sender).Text = $"You clicked " + lesson + ", sentence simple: " + abstrato;
             List<Aula> aula = _lettersService.GetAll();
-            if (count >= aula.Count) count = 0;
+            if (count_exit >= aula.Count) {
+                count_exit = 0;
+                lesson_number = 0;
+            }
         }
     }
 
