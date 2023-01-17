@@ -7,7 +7,16 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Letter.Android", "Letter\Le
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Letter", "Letter\Letter\Letter.csproj", "{C619464B-E76C-4BD5-A65A-83EBC15DAB05}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Letter.WebAPI", "Letter.WebAPI\Letter.WebAPI.csproj", "{4FCB6EAB-B1CC-44D2-ABB2-AE16ABAD6CC4}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Letter.Shared", "Letter.Shared\Letter.Shared.shproj", "{673DE26A-EE0C-4C29-BC24-CC6347DADCC3}"
+EndProject
 Global
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		Letter.Shared\Letter.Shared.projitems*{4fcb6eab-b1cc-44d2-abb2-ae16abad6cc4}*SharedItemsImports = 5
+		Letter.Shared\Letter.Shared.projitems*{673de26a-ee0c-4c29-bc24-cc6347dadcc3}*SharedItemsImports = 13
+		Letter.Shared\Letter.Shared.projitems*{c619464b-e76c-4bd5-a65a-83ebc15dab05}*SharedItemsImports = 5
+	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
@@ -25,6 +34,10 @@ Global
 		{C619464B-E76C-4BD5-A65A-83EBC15DAB05}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C619464B-E76C-4BD5-A65A-83EBC15DAB05}.Release|Any CPU.Build.0 = Release|Any CPU
 		{C619464B-E76C-4BD5-A65A-83EBC15DAB05}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{4FCB6EAB-B1CC-44D2-ABB2-AE16ABAD6CC4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4FCB6EAB-B1CC-44D2-ABB2-AE16ABAD6CC4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4FCB6EAB-B1CC-44D2-ABB2-AE16ABAD6CC4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4FCB6EAB-B1CC-44D2-ABB2-AE16ABAD6CC4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

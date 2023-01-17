@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects Condition="'$(MSBuildVersion)' == '' Or '$(MSBuildVersion)' &lt; '16.0'">$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>673de26a-ee0c-4c29-bc24-cc6347dadcc3</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>Letter.Shared</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Abstrato.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Conteudo.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Expressao.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\GitUser.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Oracao.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Predicado.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Sujeito.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Versao.cs" />
+  </ItemGroup>
+</Project>

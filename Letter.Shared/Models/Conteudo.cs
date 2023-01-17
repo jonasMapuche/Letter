@@ -1,8 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
 
-namespace Letter.Models
+namespace Letter.Shared.Models
 {
     public class Conteudo
     {
